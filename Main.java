@@ -1,3 +1,5 @@
+//Main file
+
 // An animal shelter, which holds only dogs and cats, operates on a strictly
 // "first in, first out" basis. People must adopt either the "oldest" (based on arrival time) of
 //  all animals at the shelter, or they can select whether they would
@@ -12,15 +14,12 @@ public class Main {
     public static void main(String[] args) {
         AnimalShelter shelter = new AnimalShelter();
 
-        shelter.enqueue(new Dog("Flash"));
-        shelter.enqueue(new Cat("Mango"));
-        shelter.enqueue(new Dog("Piper"));
-        shelter.enqueue(new Cat("Mittens"));
-        shelter.enqueue(new Dog("Shiloh"));
-        shelter.enqueue(new Cat("Ziggy"));
+        shelter.enqueue(new Dog("Flash", "Beagle", "male", 5));
+        shelter.enqueue(new Cat("Mango", "Persian cat", "male", 3));
+        shelter.enqueue(new Dog("Piper", "Poodle", "female", 2));
 
-        System.out.println("Dequeued any: " + shelter.dequeueAny().getName());
-        System.out.println("Dequeued dog: " + shelter.dequeueDog().getName());
-        System.out.println("Dequeued cat: " + shelter.dequeueCat().getName());
+        System.out.println("Dequeued any: " + shelter.dequeueAny());
+        System.out.println("Dequeued dog: " + shelter.dequeueDog());
+        System.out.println("Dequeued cat: " + shelter.dequeueCat());
     }
 }
