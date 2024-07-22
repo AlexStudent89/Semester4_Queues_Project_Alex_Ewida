@@ -1,21 +1,19 @@
-//Animal file
+// Animal.java
 package Queues;
-
-import java.time.LocalDateTime;
 
 public abstract class Animal {
     private String name;
-    private LocalDateTime arrivalTime;
     private String breed;
     private String gender;
     private int age;
+    private long arrivalTime;
 
-    public Animal(String name, String breed, String gender, int age) {
+    public Animal(String name, String breed, String gender, int age, long arrivalTime) {
         this.name = name;
         this.breed = breed;
         this.gender = gender;
         this.age = age;
-        this.arrivalTime = LocalDateTime.now();
+        this.arrivalTime = arrivalTime;
     }
 
     public String getName() {
@@ -34,8 +32,12 @@ public abstract class Animal {
         return age;
     }
 
-    public LocalDateTime getArrivalTime() {
+    public long getArrivalTime() {
         return arrivalTime;
+    }
+
+    public void setArrivalTime(long arrivalTime) {
+        this.arrivalTime = arrivalTime;
     }
 
     @Override
