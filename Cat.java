@@ -1,4 +1,4 @@
-// Cat.java
+// Cat java file
 package Queues;
 
 public class Cat extends Animal {

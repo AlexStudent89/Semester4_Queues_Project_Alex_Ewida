@@ -1,4 +1,4 @@
-// Dog.java
+// Dog java file
 package Queues;
 
 public class Dog extends Animal {

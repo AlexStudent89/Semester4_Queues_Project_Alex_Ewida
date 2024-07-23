@@ -1,4 +1,4 @@
-//QueueArray.java
+//QueueArray java file
 package Queues;
 
 public class QueueArray {

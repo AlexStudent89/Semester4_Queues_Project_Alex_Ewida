@@ -1,4 +1,4 @@
-// Animal.java
+// Animal java file
 package Queues;
 
 public abstract class Animal {
