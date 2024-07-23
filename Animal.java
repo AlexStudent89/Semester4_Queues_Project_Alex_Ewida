@@ -16,29 +16,10 @@ public abstract class Animal {
         this.arrivalTime = arrivalTime;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getBreed() {
-        return breed;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
     public long getArrivalTime() {
         return arrivalTime;
     }
 
-    public void setArrivalTime(long arrivalTime) {
-        this.arrivalTime = arrivalTime;
-    }
 
     @Override
     public String toString() {
